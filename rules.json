@@ -1,0 +1,48 @@
+{
+    "K": {
+        "name": "King",
+        "type": "normal",
+        "max_steps": 1,
+        "straight": true,
+        "diagonal": true
+    },
+
+    "Q": {
+        "name": "Queen",
+        "type": "normal",
+        "max_steps": -1,
+        "straight": true,
+        "diagonal": true
+    },
+
+    "R": {
+        "name": "Rook",
+        "type": "normal",
+        "max_steps": -1,
+        "straight": true,
+        "diagonal": false
+    },
+
+    "B": {
+        "name": "Bishop",
+        "type": "normal",
+        "max_steps": -1,
+        "straight": false,
+        "diagonal": true
+    },
+
+    "N": {
+        "name": "Knight",
+        "type": "jump",
+        "moves": [
+            [2,1],
+            [2,-1],
+            [-2,1],
+            [-2,-1],
+            [1,2],
+            [1,-2],
+            [-1,2],
+            [-1,-2]
+        ]
+    }
+}
