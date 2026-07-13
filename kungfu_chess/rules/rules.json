@@ -6,7 +6,6 @@
         "straight": true,
         "diagonal": true
     },
-
     "Q": {
         "name": "Queen",
         "type": "normal",
@@ -14,7 +13,6 @@
         "straight": true,
         "diagonal": true
     },
-
     "R": {
         "name": "Rook",
         "type": "normal",
@@ -22,7 +20,6 @@
         "straight": true,
         "diagonal": false
     },
-
     "B": {
         "name": "Bishop",
         "type": "normal",
@@ -30,19 +27,37 @@
         "straight": false,
         "diagonal": true
     },
-
     "N": {
         "name": "Knight",
         "type": "jump",
         "moves": [
-            [2,1],
-            [2,-1],
-            [-2,1],
-            [-2,-1],
-            [1,2],
-            [1,-2],
-            [-1,2],
-            [-1,-2]
+            [2, 1],
+            [2, -1],
+            [-2, 1],
+            [-2, -1],
+            [1, 2],
+            [1, -2],
+            [-1, 2],
+            [-1, -2]
         ]
+    },
+    "P": {
+        "name": "Pawn",
+        "type": "pawn",
+        "promotion": "Q",
+        "moves": {
+            "w": [
+                [-1, 0],
+                [-2, 0],
+                [-1, -1],
+                [-1, 1]
+            ],
+            "b": [
+                [1, 0],
+                [2, 0],
+                [1, -1],
+                [1, 1]
+            ]
+        }
     }
 }
