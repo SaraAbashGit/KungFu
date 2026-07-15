@@ -14,6 +14,7 @@ CELL_SIZE = 100
 CLICK_COMMAND = "click"
 WAIT_COMMAND = "wait"
 PRINT_BOARD_COMMAND = "print board"
+JUMP_COMMAND = "jump"
 
 
 # Piece kinds

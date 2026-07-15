@@ -1,6 +1,5 @@
 import json
 from pathlib import Path
-
 from kungfu_chess import constants
 from kungfu_chess.model.board import Board
 from kungfu_chess.model.position import Position
@@ -107,10 +106,10 @@ class PieceRules:
 
         color = board.get_color(source)
 
-        if color == constants.WHITE and source.row != board.height - 1:
+        if color == constants.WHITE and source.row != board.height - 2:
             return False
 
-        if color == constants.BLACK and source.row != 0:
+        if color == constants.BLACK and source.row != 1:
             return False
 
         return not board.has_piece_between(source, destination)

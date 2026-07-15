@@ -38,3 +38,11 @@ class Controller:
 
         self._engine.request_move(self._selected, position)
         self._selected = None
+    def jump(self, x: int, y: int):
+
+        position = self._mapper.pixel_to_cell(x, y)
+
+        if not self._board.inside_bounds(position):
+            return
+
+        self._engine.request_jump(position)

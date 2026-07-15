@@ -46,6 +46,8 @@ class Board:
         self._grid[destination.row][destination.col] = token
         self._grid[source.row][source.col] = constants.EMPTY
         self.check_promotion(destination)
+    def remove_piece(self, position: Position):
+        self._grid[position.row][position.col] = constants.EMPTY
     def check_promotion(self, destination: Position):
         if self.get_kind(destination) != constants.PAWN:
             return
@@ -80,3 +82,4 @@ class Board:
             col += step_col
 
         return False
+    

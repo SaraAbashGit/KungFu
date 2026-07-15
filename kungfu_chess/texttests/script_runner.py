@@ -46,7 +46,10 @@ class ScriptRunner:
             parts = command.split()
             controller.click(int(parts[1]), int(parts[2]))
             return
-
+        if command.startswith(constants.JUMP_COMMAND):
+            parts = command.split()
+            controller.jump(int(parts[1]), int(parts[2]))
+            return
         if command.startswith(constants.WAIT_COMMAND):
             parts = command.split()
             game_engine.wait(int(parts[1]))
