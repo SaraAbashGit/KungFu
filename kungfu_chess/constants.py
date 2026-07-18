@@ -5,6 +5,8 @@ EMPTY = "."
 
 BOARD_HEADER = "Board:"
 COMMANDS_HEADER = "Commands:"
+BOARD_ROWS = 8
+BOARD_COLS = 8
 
 CELL_SIZE = 100
 
